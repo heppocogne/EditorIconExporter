@@ -37,7 +37,7 @@ func _on_FileDialog_file_selected(path:String):
 	var save_error:int
 	if path.ends_with(".png"):
 		save_error=img.save_png(path)
-	elif path.ends_with("*.exr"):
+	elif path.ends_with(".exr"):
 		save_error=img.save_exr(path)
 	elif path.ends_with(".tres") or path.ends_with(".res"):
 		save_error=ResourceSaver.save(path,img)
