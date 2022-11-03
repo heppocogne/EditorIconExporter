@@ -1,8 +1,8 @@
 tool
 extends WindowDialog
 
-const error_color:=Color(0x5fff97)
-const success_color:=Color(0xff5f5f)
+const error_color:=Color(0xff5f5f)
+const success_color:=Color(0x5fff97)
 
 onready var texture_rect:TextureRect=$MarginContainer/VBoxContainer/CenterContainer/TextureRect
 onready var error_message:Label=$MarginContainer/VBoxContainer/ErrorMessage
