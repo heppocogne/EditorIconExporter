@@ -1,8 +1,9 @@
 tool
 extends WindowDialog
 
-const error_color:=Color(0xff5f5f)
-const success_color:=Color(0x5fff97)
+# colors from https://github.com/godotengine/godot/blob/c98d6142d0c8cf4ac284a595ad1156a4b74736ad/editor/editor_themes.cpp#L546-L548
+const error_color:=Color(1,0.47,0.42)
+const success_color:=Color(0.45,0.95,0.5)
 
 onready var texture_rect:TextureRect=$MarginContainer/VBoxContainer/CenterContainer/TextureRect
 onready var error_message:Label=$MarginContainer/VBoxContainer/ErrorMessage
