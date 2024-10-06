@@ -206,6 +206,8 @@ func _on_SearchLineEdit_text_changed(new_text:String):
 	for icon in _icons:
 		if _previews[icon].visible and !icon.matchn(filter):
 			_previews[icon].visible=false
+		else:
+			_previews[icon].visible=true
 
 
 func _on_ExportButton_pressed():
