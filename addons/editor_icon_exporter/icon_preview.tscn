@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://addons/editor_icon_exporter/panel_style_normal.tres" type="StyleBox" id=1]
+[ext_resource path="res://addons/editor_icon_exporter/icon_preview.gd" type="Script" id=2]
+[ext_resource path="res://addons/editor_icon_exporter/icon_export.png" type="Texture" id=3]
+
+[sub_resource type="Theme" id=1]
+
+[node name="IconPreview" type="PanelContainer"]
+margin_right = 64.0
+margin_bottom = 64.0
+custom_styles/panel = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="VBoxLayout" type="VBoxContainer" parent="."]
+margin_right = 80.0
+margin_bottom = 64.0
+theme = SubResource( 1 )
+alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxLayout"]
+margin_top = 7.0
+margin_right = 80.0
+margin_bottom = 39.0
+mouse_filter = 1
+
+[node name="TextureRect" type="TextureRect" parent="VBoxLayout/CenterContainer"]
+margin_left = 24.0
+margin_right = 56.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 3 )
+expand = true
+
+[node name="Label" type="Label" parent="VBoxLayout"]
+margin_top = 43.0
+margin_right = 80.0
+margin_bottom = 57.0
+rect_min_size = Vector2( 80, 0 )
+text = "IconName"
+align = 1
+autowrap = true

@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "PanelContainer",
+"class": "IconPreview",
+"language": "GDScript",
+"path": "res://addons/editor_icon_exporter/icon_preview.gd"
+} ]
+_global_script_class_icons={
+"IconPreview": ""
+}
+
 [application]
 
 config/name="EditorIconExporter"
@@ -20,6 +30,10 @@ enabled=PoolStringArray( "res://addons/editor_icon_exporter/plugin.cfg" )
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[network]
+
+limits/debugger_stdout/max_chars_per_second=8192
 
 [physics]
 
